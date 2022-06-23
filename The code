@@ -1,0 +1,19 @@
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.io.IOException;
+public class a {
+	public static void main(String[] args) throws IOException, AWTException {
+		
+		Robot x = new Robot(); 
+		x.setAutoDelay(400);
+		
+		for (int j = 0; j < 999999999; j++) {
+			x.mouseMove(1161 , 943);
+			x.keyPress(34);
+			x.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+			x.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+			
+		}
+	}
+}
